@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'gazous/top'
-  get 'gazous/result'
+  get '/top' => 'gazous#top'
+  post '/result' => 'gazous#result'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

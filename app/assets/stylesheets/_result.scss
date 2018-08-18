@@ -1,0 +1,45 @@
+
+.resultbody{
+  height: 70vh;
+  width: 100vw;
+  // 中身の要素縦方向中央寄せ
+  display: flex;
+  // 中身の要素横方向中央寄せ
+  justify-content: center;
+}
+
+.result{
+  height: 430px;
+  width: 40vw;
+  margin-top: 50px;
+  background-color: $red2;
+  border-radius: 20px;
+  text-align: center;
+  &__header{
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+  }
+  &__point{
+    width: 60%;
+    height: 100px;
+    background-color: white;
+    margin-bottom: 20px;
+    margin: auto;
+    padding-top: 55px ;
+    font-size: 50px;
+    border-radius: 20px;
+  }
+  &__discription{
+    margin: 30px;
+    color: white;
+
+  }
+  &__log{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

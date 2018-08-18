@@ -1,0 +1,50 @@
+
+.mainbody{
+  height: 100vh;
+  width: 100vw;
+  // 中身の要素縦方向中央寄せ
+  display: flex;
+  // 中身の要素横方向中央寄せ
+  justify-content: center;
+}
+
+.main{
+  height: 85vh;
+  width: 40vw;
+  margin-top: 50px;
+  background-color: $red2;
+  border-radius: 20px;
+  text-align: center;
+  &__header{
+    margin: 20px;
+    color: white;
+    font-size: 40px;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+
+  }
+  &__discription{
+    margin: 30px;
+    color: white;
+
+  }
+  &__typeArea{
+    font-size: 20px;
+    width: 50%;
+
+  }
+  &__sendButton{
+    height: 60px;
+    width: 50%;
+    margin: 20px auto;
+    background-color: $red4;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    // 中身の要素縦方向中央寄せ
+    display: flex;
+    align-items: center;
+    // 中身の要素横方向中央寄せ
+    justify-content: center;
+    border: none;
+  }
+}
