@@ -1,5 +1,9 @@
 class GazousController < ApplicationController
   def top
+
+  end
+
+  def result
     link = params[:image_url]
     image = Scraping.get_product(link)
     require "google/cloud/vision"
@@ -8,11 +12,9 @@ class GazousController < ApplicationController
     vision = Google::Cloud::Vision.new project: project_id
     # The name of the image file to annotate
     file_name = image
-    @@res = vision.image(file_name).labels
-  end
+    res = vision.image(file_name).labels
 
-  def result
-    @@res.each do |label|
+    res.each do |label|
       puts label.inspect
     end
   end
