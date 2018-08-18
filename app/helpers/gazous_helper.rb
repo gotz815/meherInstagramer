@@ -1,0 +1,2 @@
+module GazousHelper
+end

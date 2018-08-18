@@ -67,3 +67,8 @@ gem 'erb2haml'
 
 #font-awesome
 gem "font-awesome-rails"
+
+gem 'pry-rails'
+gem 'mechanize'
+gem "google-cloud-vision"
+gem 'dotenv-rails'
