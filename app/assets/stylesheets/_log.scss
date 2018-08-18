@@ -1,0 +1,20 @@
+
+.log{
+  height: 150px;
+  width: 200px;
+  background-color: $red2;
+  border-radius: 20px;
+  text-align: center;
+  float: left;
+  margin: 10px;
+  &__header{
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+  }
+  &__discription{
+    margin: 20px;
+    color: white;
+  }
+}
