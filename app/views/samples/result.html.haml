@@ -3,8 +3,22 @@
     .result__header
       %h2 あなたのミーハー度は
     .result__point
-      %h1 500000
+      %h1
+        %script{:language => "javascript"}
+          :cdata
+            <!--
+            var f=new Array(0, 80, 99 , 100);
+            document.write(c[Math.floor(Math.random()*c.length)]);
+            \//-->%
     .result__discription
-      %p ああああああああああああああああああああああ！！
+     - if(f == 0)
+        あーれー写真てしってるかな、君面白いね
+     - else
+        %script{:language => "javascript"}
+          :cdata
+            <!--
+            var c=new Array("君には自分で考えるという能力がなのかな人間やめて見ようか","他人に合わせることしかできないのかな。それ、なんていうか知ってる金魚の糞て言うんだよ","あーやっちまってんな写真なめてんの、君にはスマホすら必要ないんじゃないかな","あーあーダメだこりゃ、世紀末だわ");
+            document.write(c[Math.floor(Math.random()*c.length)]);
+            \//-->
 .result__log
   =render partial: "log", collection: @logs
