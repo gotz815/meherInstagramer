@@ -1,0 +1,18 @@
+.resultbody
+  .result.z-depth-4
+    .result__header
+      %h2 あなたのミーハー度は
+    .result__point
+      %h1
+        %script
+          var c=["HTML小技集...","ホームページ...","今日は遊ぶ...","明日は晴れ..."];
+          document.write(c[Math.floor(Math.random()*c.length)]);
+    .result__discription
+     - if(f == 0)
+        あーれー写真てしってるかな、君面白いね
+     - else
+        %script
+          var c=new Array("HTML小技集...","ホームページ...","今日は遊ぶ...","明日は晴れ...");
+          document.write(c[Math.floor(Math.random()*c.length)]);
+.result__log
+  =render partial: "log", collection: @logs

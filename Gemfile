@@ -72,3 +72,6 @@ gem 'pry-rails'
 gem 'mechanize'
 gem "google-cloud-vision"
 gem 'dotenv-rails'
+gem "rspec"
+gem 'poltergeist'
+

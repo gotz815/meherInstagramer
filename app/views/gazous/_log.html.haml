@@ -1,0 +1,16 @@
+.log.z-depth-3
+  .log__header
+    %h1
+    -if(f==0)
+      %script
+        var c=["HTML小技集...","ホームページ...","今日は遊ぶ...","明日は晴れ..."];
+        document.write(c[Math.floor(Math.random()*c.length)]);
+    -if(f > 0)
+      %script
+        var c=["HTML小技集...","ホームページ...","今日は遊ぶ...","明日は晴れ..."];
+        document.write(c[Math.floor(Math.random()*c.length)]);
+  .log__discription
+    %p
+      %script
+        var c=["HTML小技集...","ホームページ...","今日は遊ぶ...","明日は晴れ..."];
+        document.write(c[Math.floor(Math.random()*c.length)]);
